@@ -1,4 +1,4 @@
-# Nairo React Personal Portfolio Template
+# Ashish Tiwari Personal Portfolio Template
 
 ## Description
 
