@@ -1,0 +1,147 @@
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 20px 50px 20px;
+    text-align: center;
+}
+
+/* Title Styling */
+.about-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.dark .about-title {
+    color: #f8e4ba;
+}
+
+/* Flex Layout for Content */
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20vh;
+    flex-wrap: wrap;
+}
+
+/* Photo Card Section */
+.about-photo-card {
+    flex: 0;
+    max-width: 400px;
+    text-align: center;
+    line-height: 0px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    /* Default shadow for light mode */
+}
+
+.dark .about-photo-card {
+    background-color: #444;
+    box-shadow: 0px 4px 10px rgba(255, 204, 0, 0.6);
+    /* Golden shadow */
+}
+
+.about-photo {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.tech-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+    display: none;
+}
+
+.tech-icon {
+    width: 40px;
+    height: 40px;
+}
+
+/* Browser Mockup Section */
+.browser-mockup {
+    flex: 2;
+    max-width: 700px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.dark .browser-mockup {
+    background-color: #444;
+    box-shadow: 0px 4px 10px rgba(255, 204, 0, 0.6);
+    /* Golden shadow */
+}
+
+.browser-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #e5e5e5;
+    border-bottom: 1px solid #ddd;
+}
+
+.dark .browser-header {
+    background-color: #555;
+    border-bottom: 1px solid #666;
+}
+
+.browser-dot {
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+    border-radius: 50%;
+}
+
+.browser-dot.red {
+    background-color: #ff5f57;
+}
+
+.browser-dot.yellow {
+    background-color: #ffbd2e;
+}
+
+.browser-dot.green {
+    background-color: #28c940;
+}
+
+.browser-content {
+    padding: 20px;
+    text-align: justify;
+    color: #333;
+}
+
+.dark .browser-content {
+    color: #f8e4ba;
+}
+
+.browser-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.browser-content p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-photo-card,
+    .browser-mockup {
+        max-width: 100%;
+    }
+}

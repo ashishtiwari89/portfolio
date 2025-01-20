@@ -1,0 +1,98 @@
+.home-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: inherit;
+}
+
+.home-icon {
+    font-size: 125px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.home-name {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+}
+
+.home-title {
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Theme Switch Styling */
+.theme-switch-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dark .theme-switch-container .react-switch-bg {
+    background-color: rgb(37, 36, 36) !important;
+    /* Dark mode color */
+}
+
+.dark .home-icon {
+    color: #f8e4ba;
+}
+
+.dark .home-name {
+    color: #f8e4ba;
+}
+
+.dark .home-title {
+    color: #f8e4ba;
+}
+
+
+
+.social-icons {
+    margin-top: 20px;
+    /* Space below the theme switch */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* Space between icons */
+}
+
+.icon {
+    font-size: 35px;
+    /* Size of the icons */
+    color: #333;
+    transition: color 0.3s;
+}
+
+.icon:hover {
+    color: #0077b5;
+    /* Hover color for both icons */
+}
+
+.github:hover {
+    color: #4b4b4b;
+    /* GitHub specific hover color */
+}
+
+.linkedin:hover {
+    color: #0077b5;
+    /* LinkedIn specific hover color */
+}
+
+.dark .icon {
+    color: #f8e4ba;
+}
+
+.dark .icon:hover {
+    color: #ffcc00;
+    /* Hover color in dark mode */
+}

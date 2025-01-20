@@ -1,0 +1,164 @@
+/* Project Page Container */
+.projects-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.projects-title {
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Grid Layout for Project Cards */
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.project-card {
+    width: 350px;
+    height: 235px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-title {
+    position: absolute;
+    bottom: 0;
+    width: 97%;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.8);
+    /* Less transparency for better readability */
+    color: #fff;
+    /* White text for high contrast */
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    /* Rounded corners at the bottom */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    /* Optional: Adds subtle text shadow */
+}
+
+/* Modal for Project Details */
+.project-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.project-modal-content {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 440px;
+    text-align: center;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.modal-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.modal-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.modal-github-link {
+    display: inline-flex;
+    align-items: center;
+    font-size: 18px;
+    color: #0077b5;
+    text-decoration: none;
+}
+
+.modal-github-link:hover {
+    text-decoration: underline;
+}
+
+/* Dark Mode Styles */
+/* Dark Mode Styles */
+.dark .project-card {
+    background-color: #333;
+    color: #f8e4ba;
+    box-shadow: 0 6px 8px rgba(255, 204, 0, 0.4);
+    /* Golden shadow for dark mode */
+    position: relative;
+    overflow: hidden;
+    /* Ensure the overlay doesn't spill out */
+}
+
+.dark .project-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    /* Semi-transparent dark layer */
+    z-index: 1;
+    /* Place above the card background */
+    transition: background 0.3s ease-in-out;
+}
+
+.dark .project-card:hover::after {
+    background: rgba(0, 0, 0, 0.1);
+    /* Darker overlay on hover */
+}
+
+.dark .project-title {
+    position: absolute;
+    z-index: 2;
+    /* Place above the overlay */
+    background: rgba(33, 33, 33, 0.8);
+    color: #f8e4ba;
+}
+
+.dark .project-modal-content {
+    background: #333;
+    color: #f8e4ba;
+    box-shadow: 0 8px 20px rgba(255, 204, 0, 0.4);
+    /* Golden shadow for modal in dark mode */
+}
+
+.dark .modal-github-link {
+    color: #ffcc00;
+}
