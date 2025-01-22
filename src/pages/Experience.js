@@ -57,7 +57,7 @@ const experienceData = [
         title: "Software Engineer Intern",
         company: "Google",
         duration: "04.2016 - 08.2016",
-        skills: ["ETL", "Docker", "Kubernetes", "Go", "Google Cloud Platform (GCP)"],
+        skills: ["Java", "Data Structures", "Spring MVC", "Git", "GitHub"],
         icon: <FaGoogle />, // Replaced hourglass with Angular icon
         iconBg: "#ffcc00",
         color: "#fff",
