@@ -33,7 +33,7 @@ const experienceData = [
         title: "Senior Software Engineer",
         company: "Ntier Infotech, Indore, India",
         duration: "09.2019 - 10.2021",
-        skills: ["REST API", "SQL", "JavaScript", "Amazon S3", "Kubernets", "Java", "SQS", "Docker", "Python"],
+        skills: ["Java", "Spring Boot", "JavaScript", "TypeScript", "React.js", "Node.js", "MySQL", "MongoDB", "Docker"],
         icon: (
             <div
                 style={{
