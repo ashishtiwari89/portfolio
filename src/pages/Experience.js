@@ -6,9 +6,9 @@ import { FaGoogle, FaHourglassHalf } from "react-icons/fa";
 
 const experienceData = [
     {
-        title: "Web Developer",
+        title: "Web Application Developer",
         company: "CSU Fullerton Auxiliary Services Corporation "
-        duration: "05.2022 - 08.2024",
+        duration: "01.2023 - 04.2024",
         skills: ["Java", "NetSuite Commerce", "HTML5", "CSS3", "JavaScript", "OracleDB", "REST API"],
         icon: (
             <div
@@ -32,7 +32,7 @@ const experienceData = [
     {
         title: "Senior Software Engineer",
         company: "Ntier Infotech, Indore, India",
-        duration: "09.2019 - 10.2021",
+        duration: "06.2016 - 05.2021",
         skills: ["Java", "Spring Boot", "JavaScript", "TypeScript", "React.js", "Node.js", "MySQL", "MongoDB", "Docker"],
         icon: (
             <div
