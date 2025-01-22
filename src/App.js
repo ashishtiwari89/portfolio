@@ -31,7 +31,7 @@ const App = () => {
       {/* Resume Button */}
       <div className="controls">
         <a
-          href="/resume_Abhishek.pdf" // File path points to the public folder
+          href="/Resume_Ashish_Tiwari.pdf" // File path points to the public folder
           download
           className="resume-button"
           target="_blank"
