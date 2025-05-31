@@ -20,62 +20,6 @@ const Home = ({ isDarkMode, handleToggle }) => {
                     }}
                 />
             </div>
-            {/* Theme Switch */}
-            <div className="theme-switch-container">
-                <Switch
-                    checked={isDarkMode}
-                    onChange={handleToggle}
-                    checkedIcon={
-                        <span
-                            style={{
-                                display: "flex",
-                                justifyContent: "center",
-                                alignItems: "center",
-                                height: "100%",
-                                fontSize: "16px",
-                            }}
-                        >
-                            🌜
-                        </span>
-                    }
-                    uncheckedIcon={
-                        <span
-                            style={{
-                                display: "flex",
-                                justifyContent: "center",
-                                alignItems: "center",
-                                height: "100%",
-                                fontSize: "16px",
-                            }}
-                        >
-                            🌞
-                        </span>
-                    }
-                    onColor="#333"
-                    offColor="#ddd"
-                />
-
-            </div>
-            {/* Social Icons */}
-            <div className="social-icons">
-                <a
-                    href="https://github.com/ashishtiwari89"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="icon github"
-                >
-                    <FaGithub />
-                </a>
-                <a
-                    href="https://linkedin.com/in/ashish989"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="icon linkedin"
-                >
-                    <FaLinkedin />
-                </a>
-            </div>
-        </div>
     );
 };
 
