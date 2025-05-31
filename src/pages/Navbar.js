@@ -42,7 +42,7 @@ export default Navbar;
 import React, { useState } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Switch from "react-switch";
-//import "../styles/Navbar.css"; // Create/update this CSS file for new styling
+import "../styles/Navbar.css"; // Create/update this CSS file for new styling
 
 const Navbar = ({ scrollToSection, isDarkMode, handleToggle }) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
