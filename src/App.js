@@ -25,17 +25,16 @@ const App = () => {
 
   return (
     <div className={`app ${isDarkMode ? "dark" : "light"}`}>
-      {/* Updated Navbar */}
+      {/* Navbar */}
       <Navbar
         scrollToSection={scrollToSection}
         isDarkMode={isDarkMode}
         handleToggle={handleToggle}
       />
 
-      {/* Removed duplicate Resume Button (now inside Navbar) */}
       {/* Sections */}
       <div id="home" className="section">
-        <Home isDarkMode={isDarkMode} handleToggle={handleToggle} />
+        <Home />
       </div>
       <div id="about" className="section">
         <About isDarkMode={isDarkMode} />
@@ -52,6 +51,8 @@ const App = () => {
       <div id="contact" className="section">
         <Contact />
       </div>
+
+      {/* Footer */}
       <Footer />
     </div>
   );
