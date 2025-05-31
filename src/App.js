@@ -4,10 +4,10 @@ import Home from "./pages/Home";
 import Navbar from "./pages/Navbar";
 import About from "./pages/About";
 import Skills from "./pages/Skills";
-import Projects from "./pages/Projects"; // Import Projects component
-import Experience from "./pages/Experience"; // Import Experience component
-import Contact from "./pages/Contact"; // Import Contact component
-import Footer from "./pages/Footer"; // Import Footer component
+import Projects from "./pages/Projects";
+import Experience from "./pages/Experience";
+import Contact from "./pages/Contact";
+import Footer from "./pages/Footer";
 
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -25,43 +25,34 @@ const App = () => {
 
   return (
     <div className={`app ${isDarkMode ? "dark" : "light"}`}>
-      {/* Navbar */}
-      <Navbar scrollToSection={scrollToSection} />
+      {/* Updated Navbar */}
+      <Navbar
+        scrollToSection={scrollToSection}
+        isDarkMode={isDarkMode}
+        handleToggle={handleToggle}
+      />
 
-      {/* Resume Button */}
-      <div className="controls">
-        <a
-          href="/Resume_Ashish_Tiwari.pdf" // File path points to the public folder
-          download
-          className="resume-button"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Resume
-        </a>
-      </div>
-
+      {/* Removed duplicate Resume Button (now inside Navbar) */}
       {/* Sections */}
       <div id="home" className="section">
         <Home isDarkMode={isDarkMode} handleToggle={handleToggle} />
       </div>
       <div id="about" className="section">
-        <About isDarkMode={isDarkMode} /> {/* Pass isDarkMode to About */}
+        <About isDarkMode={isDarkMode} />
       </div>
       <div id="projects" className="section">
-        <Projects /> {/* Render the Projects component */}
+        <Projects />
       </div>
       <div id="skills" className="section">
-        <Skills /> {/* Render the Skills component */}
+        <Skills />
       </div>
       <div id="experience" className="section">
-        <Experience /> {/* Render the Experience component */}
+        <Experience />
       </div>
       <div id="contact" className="section">
-        <Contact /> {/* Render the Contact component */}
+        <Contact />
       </div>
-      {/* Footer */}
-      <Footer /> {/* Render the Footer component */}
+      <Footer />
     </div>
   );
 };
