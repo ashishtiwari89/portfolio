@@ -1,10 +1,9 @@
 import React from "react";
-import { FaLaptopCode, FaGithub, FaLinkedin } from "react-icons/fa"; // Import GitHub and LinkedIn icons
+import { FaLaptopCode } from "react-icons/fa"; // Only FaLaptopCode is needed now
 import Typewriter from "typewriter-effect";
-import Switch from "react-switch"; // Import Switch for theme toggle
 import "../styles/Home.css";
 
-const Home = ({ isDarkMode, handleToggle }) => {
+const Home = () => {
     return (
         <div className="section home-container">
             <FaLaptopCode className="home-icon" />
@@ -12,7 +11,12 @@ const Home = ({ isDarkMode, handleToggle }) => {
             <div className="home-title">
                 <Typewriter
                     options={{
-                        strings: ["Software Engineer", "Full-Stack Developer", "Java Developer", "React Developer"],
+                        strings: [
+                            "Software Engineer",
+                            "Full-Stack Developer",
+                            "Java Developer",
+                            "React Developer"
+                        ],
                         autoStart: true,
                         loop: true,
                         delay: 50,
@@ -20,6 +24,7 @@ const Home = ({ isDarkMode, handleToggle }) => {
                     }}
                 />
             </div>
+        </div>
     );
 };
 
